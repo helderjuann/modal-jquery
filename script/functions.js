@@ -1,7 +1,7 @@
 $(function(){
 
 	openWindow();
-	ClickClose();
+	clickClose();
 
 	function openWindow(){
 		$('.submit-btn').click(function(e){
@@ -10,7 +10,7 @@ $(function(){
 		});
 	}
 
-	function ClickClose(){
+	function clickClose(){
 
 		var el = $('body,.submit-btn');
 
@@ -29,7 +29,7 @@ $(function(){
 	
 
 	$('form#formOne').submit(function(e){
-		//e.preventDefault();
+		e.preventDefault();
 		var name = $('input[name=name]').val();
 		var phone = $('input[name=phone]').val();
 		var email = $('input[name=email]').val();
