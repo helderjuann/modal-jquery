@@ -12,7 +12,7 @@ $(function(){
 
 	function clickClose(){
 
-		var el = $('body,.submit-btn');
+		var el = $('body,.close-btn');
 
 		el.click(function(){
 			$('.background-cg').fadeOut(); 
@@ -29,7 +29,7 @@ $(function(){
 	
 
 	$('form#formOne').submit(function(e){
-		e.preventDefault();
+		//e.preventDefault();
 		var name = $('input[name=name]').val();
 		var phone = $('input[name=phone]').val();
 		var email = $('input[name=email]').val();
