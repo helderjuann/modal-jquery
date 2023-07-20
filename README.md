@@ -1,2 +1,3 @@
 # modal-jquery
- just a test
+
+Apenas testando funcionalidades para um futuro projeto
