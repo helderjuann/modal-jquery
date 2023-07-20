@@ -37,8 +37,16 @@ section.form-wrapper .background-cg .form-fade input[type=text] {
 	line-height: 48px;
 	padding-left: 8px;
 	color:#ccc;
-	border:1px solid #ccc;
+	border:2px solid #ccc;
 	margin-bottom: 20px;
+}
+
+section.form-wrapper .background-cg .form-fade input[type=text]:focus {
+	outline: 0;
+}
+
+section.form-wrapper .background-cg .form-fade input[type=text]:focus::placeholder {
+	color: transparent;
 }
 
 section.form-wrapper .background-cg .form-fade input[type=submit] {
@@ -50,9 +58,10 @@ section.form-wrapper .background-cg .form-fade input[type=submit] {
 	cursor: pointer;
 	font-weight: bold;
 	font-family: helvetica;
-	line-height: 48px;
+	line-height: 44px;
 	text-align: center;
 	background: #69a4d3;
+	border: 2px solid #69a4d3;
 	border-radius: 10px;
 	border:0;
 }
@@ -69,7 +78,7 @@ section.form-wrapper .background-cg .form-fade .close-btn {
 	font-size: 24px;
 	top: -16px;
 	text-align: center;
-	line-height: 28px;
+	line-height: 25px;
 	cursor: pointer;
 }
 
@@ -83,12 +92,25 @@ section.form-wrapper .submit-btn {
 	cursor: pointer;
 	font-weight: bold;
 	font-family: helvetica;
-	line-height: 100px;
+	line-height: 98px;
 	text-align: center;
-	background: #69a4d3;
+	background-color: #69a4d3;
+	border: 2px solid #69a4d3;
 	border-radius: 10px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform:translate(-50%,-50%);
+	transition: 250ms ease;
+}
+
+section.form-wrapper .background-cg .form-fade .close-btn:hover {
+	color: white;
+	background-color: #69a4d3;
+}
+
+section.form-wrapper .background-cg .form-fade input[type=submit]:hover, section.form-wrapper .submit-btn:hover {
+	color: #69a4d3;
+	background-color: white;
+	border: 2px solid #69a4d3;
 }

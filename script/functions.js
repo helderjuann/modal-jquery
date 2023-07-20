@@ -84,9 +84,9 @@ $(function(){
 			return false;
 		}
 
-		if(phone.match(/^\([0-9]{2}\)[0-9]{4}-[0-9]{4}$/) == null){
+		/*if(phone.match(/^\([0-9]{2}\)[0-9]{4}-[0-9]{4}$/) == null){
 			return false;
-		}
+		}*/ //Arrumar a lógica disso daqui...
 	}
 
 	function verifyEmail(email){
