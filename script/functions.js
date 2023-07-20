@@ -4,21 +4,21 @@ $(function(){
 	ClickClose();
 
 	function openWindow(){
-		$('.btn').click(function(e){
+		$('.submit-btn').click(function(e){
 			e.stopPropagation();
-			$('.bg').fadeIn();
+			$('.background-cg').fadeIn();
 		});
 	}
 
 	function ClickClose(){
 
-		var el = $('body,.closeBtn');
+		var el = $('body,.submit-btn');
 
 		el.click(function(){
-			$('.bg').fadeOut();
+			$('.background-cg').fadeOut(); 
 		})
 
-		$('.form').click(function(e){
+		$('.form-wrapper').click(function(e){
 			e.stopPropagation();
 		})
 	}
@@ -28,7 +28,7 @@ $(function(){
 	})
 	
 
-	$('form#form1').submit(function(e){
+	$('form#formOne').submit(function(e){
 		//e.preventDefault();
 		var name = $('input[name=name]').val();
 		var phone = $('input[name=phone]').val();
