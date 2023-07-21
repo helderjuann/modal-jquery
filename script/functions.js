@@ -29,7 +29,7 @@ $(function(){
 	
 
 	$('form#formOne').submit(function(e){
-		//e.preventDefault();
+		//e.preventDefault(); Só utilizar se eu remover o "return false;"
 		var name = $('input[name=name]').val();
 		var phone = $('input[name=phone]').val();
 		var email = $('input[name=email]').val();
@@ -84,9 +84,9 @@ $(function(){
 			return false;
 		}
 
-		/*if(phone.match(/^\([0-9]{2}\)[0-9]{4}-[0-9]{4}$/) == null){
-			return false;
-		}*/ //Arrumar a lógica disso daqui...
+		if(phone.match(/^\(?\d{2}\)?\s*\d{4,5}[ -]?\d{4}$/) == null){
+			return false; //Lógica melhorada -> 21/07
+		}
 	}
 
 	function verifyEmail(email){
