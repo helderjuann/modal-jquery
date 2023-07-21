@@ -1,3 +1,3 @@
 # modal-jquery
 
-Apenas testando funcionalidades para um futuro projeto
+Apenas testes para futuros projetos <br> utilizando API e outras funcionalidades com a biblioteca JQuery
